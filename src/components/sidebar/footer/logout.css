@@ -1,0 +1,22 @@
+.btn__logout {
+  grid-area: 2 / 1 / 3 / 4;
+  max-width: 15rem;
+  background: var(--color-logout-bg);
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--color-logout-font);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 0.4rem;
+  margin-top: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 512px) {
+  .btn__logout {
+    flex-grow: 1;
+    height: 70%;
+    margin: 0.4rem;
+  }
+}

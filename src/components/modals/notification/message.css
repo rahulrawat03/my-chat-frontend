@@ -1,0 +1,24 @@
+:root {
+  --color-notification-border: #9ea09e;
+}
+
+.notification__message {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--color-notification-border);
+}
+
+.notification__text {
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.notification__delete-icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}

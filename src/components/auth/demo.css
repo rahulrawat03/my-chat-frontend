@@ -1,0 +1,34 @@
+:root {
+  --color-auth-bg: #ba9ae4e5;
+}
+
+.app-demo {
+  display: flex;
+  background: var(--color-auth-bg);
+  width: 100%;
+  height: 45%;
+  padding-bottom: 0.2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.app-demo__video {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  border: 0.3rem solid var(--color-accent);
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .app-demo {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .app-demo__video {
+    height: 60%;
+  }
+}

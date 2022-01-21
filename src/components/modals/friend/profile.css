@@ -1,0 +1,38 @@
+:root {
+  --color-user-profile-border: #9bb9c0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 0.2rem solid var(--color-user-profile-border);
+}
+
+.user-profile__info-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.user__image {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.user__name {
+  flex-grow: 1;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 588px) {
+  .user__image {
+    width: 4rem;
+  }
+
+  .user__name {
+    font-size: 2rem;
+  }
+}

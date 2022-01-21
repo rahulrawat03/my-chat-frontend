@@ -1,0 +1,40 @@
+:root {
+  --color-profile-shadow: #00000033;
+}
+
+.profile-container {
+  width: 100vw;
+  padding-bottom: 3rem;
+  overflow: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding: 3rem 1rem;
+  box-shadow: 0 0 1rem 0.2rem var(--color-profile-shadow);
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    flex-direction: row;
+  }
+}
+
+.btn__profile {
+  display: block;
+  font-size: 2rem;
+  margin: 2rem auto;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}

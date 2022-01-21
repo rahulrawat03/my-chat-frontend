@@ -1,0 +1,11 @@
+.search__message {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+}
+
+.message-underline {
+  border-top: 0.4rem solid var(--color-accent);
+  width: 5rem;
+  margin: auto;
+}

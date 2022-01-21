@@ -1,0 +1,51 @@
+:root {
+  --color-member-border: #0c5c81;
+  --color-admin-bg: #ee6f34;
+  --color-admin-shadow: #00000033;
+  --color-member-hover: #00000011;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 0;
+  padding: 0.5rem 0;
+  border-bottom: 0.1rem solid var(--color-member-border);
+  color: var(--color-font);
+  transition: all 0.2s;
+}
+
+.member:hover,
+.member:focus {
+  background: var(--color-member-hover);
+}
+
+.member__image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10%;
+  margin: 0 2rem;
+}
+
+.member__name {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.member__admin {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.member__admin span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  border-radius: 100%;
+  background: var(--color-admin-bg);
+  box-shadow: 0 0 0.5rem var(--color-admin-shadow);
+}

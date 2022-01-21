@@ -1,0 +1,6 @@
+.chat__footer {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  background: var(--color-accent);
+}

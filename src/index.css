@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #2b0a46;
+  --color-secondary: #631bc2e5;
+  --color-accent: #fdce33;
+  --color-background: #dfdfdf;
+  --color-font: #292929;
+  --color-selection: #97e7ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: var(--color-background);
+  color: var(--color-font);
+}
+
+#root {
+  height: 100vh;
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+::-webkit-scrollbar-button {
+  background: #333;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}

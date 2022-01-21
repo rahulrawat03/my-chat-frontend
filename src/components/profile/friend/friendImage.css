@@ -1,0 +1,7 @@
+:root {
+  --color-friend-profile-bg: #5dfdcd;
+}
+
+.friend__image {
+  background: var(--color-friend-profile-bg);
+}

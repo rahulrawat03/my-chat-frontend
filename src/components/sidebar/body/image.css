@@ -1,0 +1,15 @@
+.user__message__image {
+  background: var(--color-accent);
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .user__message__image {
+    margin-right: 2rem;
+  }
+}

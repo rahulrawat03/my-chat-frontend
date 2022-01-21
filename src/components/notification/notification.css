@@ -1,0 +1,57 @@
+:root {
+  --color-notification-success: #09d324;
+  --color-notification-danger: #f33d37;
+}
+
+.notification {
+  position: fixed;
+  z-index: 100;
+  color: white;
+  top: 4rem;
+  right: 0;
+  font-size: 2.4rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: capitalize;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  transform: translateX(100%);
+  animation: popup 3s linear;
+}
+
+.notification.danger {
+  background: var(--color-notification-danger);
+}
+
+.notification.success {
+  background: var(--color-notification-success);
+}
+
+@keyframes popup {
+  4% {
+    transform: translateX(50%);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  45% {
+    transform: translateX(5%);
+  }
+
+  50% {
+    transform: translateX(10%);
+  }
+
+  60% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

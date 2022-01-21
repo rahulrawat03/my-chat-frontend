@@ -1,0 +1,55 @@
+:root {
+  --color-action-add: #7f8183;
+  --color-action-friend: #4ddf4d;
+  --color-action-reject: #f8613c;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(0.2rem);
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.action__icon {
+  font-size: 2.4rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.action__type {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.action__received {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user__add {
+  background: var(--color-action-add);
+}
+
+.user__friend {
+  background: var(--color-action-friend);
+}
+
+.user__sent,
+.user__accept {
+  background: var(--color-accent);
+}
+
+.user__reject {
+  background: var(--color-action-reject);
+}
+
+@media screen and (min-width: 588px) {
+  .user__action {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+}

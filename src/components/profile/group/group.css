@@ -1,0 +1,78 @@
+:root {
+  --color-group-bg: #5599ff;
+  --color-group-save-btn: #33cf40;
+  --color-group-save-hover-btn: #30b43b;
+  --color-group-manage-btn: #5c6369;
+  --color-group-manage-hover-btn: #4c5359;
+  --color-group-delete-btn: #f23322;
+  --color-group-delete-hover-btn: #d43021;
+}
+
+.group__profile {
+  background: var(--color-group-bg);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+}
+
+.group__buttons {
+  display: flex;
+  justify-content: center;
+  width: 28rem;
+  margin: auto;
+}
+
+.btn__group {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  width: 8rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+@media screen and (min-width: 420px) {
+  .group__buttons {
+    width: 40rem;
+  }
+
+  .btn__group {
+    font-size: 1.8rem;
+    width: 12rem;
+  }
+}
+
+.btn__group--delete {
+  background: var(--color-group-delete-btn);
+}
+
+.btn__group--delete:hover,
+.btn__group--delete:focus {
+  background: var(--color-group-delete-hover-btn);
+}
+
+.btn__group--manage {
+  background: var(--color-group-manage-btn);
+}
+
+.btn__group--manage:hover,
+.btn__group--manage:focus {
+  background: var(--color-group-manage-hover-btn);
+}
+
+.btn__group--save {
+  background: var(--color-group-save-btn);
+}
+
+.btn__group--save:hover,
+.btn__group--save:focus {
+  background: var(--color-group-save-hover-btn);
+}
+
+.btn__group--leave {
+  background: var(--color-group-delete-btn);
+}
+
+.btn__group--leave:hover,
+.btn__group--leave:focus {
+  background: var(--color-group-delete-hover-btn);
+}

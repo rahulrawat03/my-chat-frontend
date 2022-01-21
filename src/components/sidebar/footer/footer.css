@@ -1,0 +1,25 @@
+:root {
+  --color-logout-shadow: #00000033;
+  --color-logout-bg: #5a5a5a;
+  --color-logout-font: #cfcfcf;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  background: inherit;
+  box-shadow: 0 0 1rem var(--color-logout-shadow);
+}
+
+@media screen and (min-width: 688px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}

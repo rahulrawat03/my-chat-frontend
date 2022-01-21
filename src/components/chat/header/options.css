@@ -1,0 +1,24 @@
+:root {
+  --color-options-bg: #a5d7dd;
+  --color-options-shadow: #00000033;
+}
+
+.options {
+  position: relative;
+}
+
+.options__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 6;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 8rem;
+  background: var(--color-options-bg);
+  box-shadow: 0 0 0.5rem var(--color-options-shadow);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}

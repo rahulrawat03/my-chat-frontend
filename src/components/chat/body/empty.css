@@ -1,0 +1,19 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.icon__chatbox {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.empty__heading {
+  font-size: 3.6rem;
+  color: var(--color-primary);
+  text-align: center;
+}

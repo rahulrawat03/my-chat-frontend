@@ -1,0 +1,24 @@
+:root {
+  --color-form-link: #4870f1;
+  --color-form-link-active: #2b16e0;
+}
+
+.login-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  padding: 2rem;
+  font-size: 1.6rem;
+  background: var(--color-accent);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form {
+    height: 100%;
+    font-size: 2rem;
+  }
+}

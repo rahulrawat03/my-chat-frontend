@@ -1,0 +1,73 @@
+:root {
+  --color-manage-members-bg: #000000aa;
+  --color-manage-members-close-font: #f84830;
+  --color-canvel-bg: #c7bfbf;
+  --color-cancel-font: #222;
+  --color-hover-save: #2b0a46cc;
+  --color-hover-cancel: #c8c2c2;
+}
+
+.manage-members {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-manage-members-bg);
+  padding-top: 5rem;
+}
+
+.manage-members__modal {
+  border-radius: 0.5rem;
+}
+
+.manage-members__close {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  font-size: 3rem;
+  color: var(--color-manage-members-close-font);
+}
+
+.manage-members__buttons {
+  width: 90%;
+  max-width: 30rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.btn__manage-members {
+  margin: 1rem;
+  padding: 0.8rem 2rem;
+  width: 10rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.change-members {
+  color: white;
+  background: var(--color-primary);
+}
+
+.change-members:hover,
+.change-members:focus {
+  background: var(--color-hover-save);
+}
+
+.cancel-change {
+  border: 0.2rem solid var(--color-primary);
+  background: var(--color-cancel-bg);
+  color: var(--color-cancel-font);
+  font-weight: 600;
+}
+
+.cancel-change:hover,
+.cancel-change:focus {
+  background: var(--color-hover-cancel);
+}

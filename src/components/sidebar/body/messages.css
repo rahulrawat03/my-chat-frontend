@@ -1,0 +1,32 @@
+:root {
+  --height-sidebar-header: 7rem;
+  --height-sidebar-search: 5.1rem;
+  --height-sidebar-footer-large-screen: 5rem;
+  --height-sidebar-footer-small-screen: 6.5rem;
+  --color-sidebar-error: #d43934;
+}
+
+.sidebar__messages {
+  list-style: none;
+  height: calc(
+    100% - var(--height-sidebar-header) - var(--height-sidebar-search) -
+      var(--height-sidebar-footer-small-screen)
+  );
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar__messages {
+    height: calc(
+      100% - var(--height-sidebar-header) -
+        var(--height-sidebar-footer-large-screen)
+    );
+  }
+
+  .sidebar__messages--small {
+    height: calc(
+      100% - var(--height-sidebar-header) - var(--height-sidebar-search) -
+        var(--height-sidebar-footer-large-screen)
+    );
+  }
+}

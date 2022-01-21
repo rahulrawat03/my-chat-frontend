@@ -1,0 +1,17 @@
+:root {
+  --color-profile-bg: #afa0c5;
+  --color-profile-error: #fc1717;
+}
+
+.profile__own {
+  background: var(--color-profile-bg);
+}
+
+.btn__own {
+  background: var(--color-primary);
+}
+
+.me__error {
+  color: var(--color-profile-error);
+  text-align: center;
+}

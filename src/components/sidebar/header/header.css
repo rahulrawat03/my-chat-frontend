@@ -1,0 +1,35 @@
+:root {
+  --color-header-shadow: #00000033;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-secondary);
+  padding: 0 1rem;
+  height: 7rem;
+  box-shadow: 0 0 0.5rem var(--color-header-shadow);
+  overflow: hidden;
+}
+
+.search__icon {
+  color: var(--color-primary);
+  font-size: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s all;
+  cursor: pointer;
+  display: none;
+}
+
+.search__icon:hover,
+.search__icon:focus {
+  background: var(--color-background);
+}
+
+@media screen and (min-width: 768px) {
+  .search__icon {
+    display: inline-block;
+  }
+}

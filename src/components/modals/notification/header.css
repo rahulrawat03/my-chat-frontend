@@ -1,0 +1,12 @@
+.notification__header {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.notification__underline {
+  width: 5rem;
+  margin: 0.5rem auto 0;
+  border-bottom: 0.5rem solid var(--color-secondary);
+}

@@ -1,0 +1,28 @@
+:root {
+  --color-font-input: #3f3f3f;
+}
+
+.detail__name {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.detail__value {
+  outline: none;
+  border: 0.1rem solid var(--color-secondary);
+  border-radius: 0.3rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0 1.5rem;
+  background: white;
+  width: 100%;
+  color: var(--color-font-input);
+}
+
+textarea.detail__value {
+  resize: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  height: 12rem;
+}

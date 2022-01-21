@@ -1,0 +1,32 @@
+:root {
+  --color-search-bar: #333;
+}
+
+.chat-search::placeholder {
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.chat-search {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.8rem;
+  color: var(--color-search-bar);
+  transition: all 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .chat-search--hidden {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

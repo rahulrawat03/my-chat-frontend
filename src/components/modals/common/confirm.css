@@ -1,0 +1,89 @@
+:root {
+  --color-confirm-bg: #00000055;
+  --color-confirm-shadow: #00000055;
+  --color-delete-bg: #e02c20;
+  --color-delete-hover: #bd2d24;
+  --color-cancel-bg: #979797;
+  --color-cancel-hover: #878787;
+}
+
+.confirm-container {
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-confirm-bg);
+}
+
+.confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 90%;
+  max-width: 70rem;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.2rem var(--color-confirm-shadow);
+}
+
+.confirm__image {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.confirm__name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.confirm__message {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.confirm__buttons {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.btn__confirm {
+  flex-grow: 1;
+  font-size: 1.8rem;
+  border: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn__delete {
+  background: var(--color-delete-bg);
+  color: white;
+}
+
+.btn__delete:hover,
+.btn__delete:focus {
+  background: var(--color-delete-hover);
+}
+
+.btn__cancel {
+  background: var(--color-cancel-bg);
+}
+
+.btn__cancel:hover,
+.btn__cancel:focus {
+  background: var(--color-cancel-hover);
+}

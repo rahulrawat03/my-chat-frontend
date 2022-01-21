@@ -1,0 +1,37 @@
+:root {
+  --color-group-shadow: #00000033;
+}
+
+.members-container {
+  width: 90%;
+  max-width: 80rem;
+  margin: auto;
+  padding-bottom: 3rem;
+  background: var(--color-group-bg);
+  box-shadow: 0 1rem 1rem 0.2rem var(--color-group-shadow);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.members__title {
+  font-weight: 500;
+  width: 90%;
+  max-width: 55rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.group__members {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 90%;
+  max-width: 60rem;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .group__members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

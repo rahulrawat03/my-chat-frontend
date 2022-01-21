@@ -1,0 +1,29 @@
+.conversation__profile {
+  flex-grow: 1;
+  display: flex;
+}
+
+.chat__profile__image {
+  height: 4.5rem;
+  width: 4.5rem;
+  object-fit: cover;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  border-radius: 100%;
+  border: 0.2rem solid var(--color-secondary);
+}
+
+.conversation__profile__link {
+  text-decoration: none;
+  color: var(--color-font);
+}
+
+.chat__profile__title {
+  font-size: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+.chat__profile__title p {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,26 @@
+.friend-search__form {
+  display: flex;
+  border: 0.2rem solid var(--color-secondary);
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  transition: all 0.2s;
+}
+
+.friend-search__form:focus {
+  box-shadow: 0 0 0.5rem var(--color-secondary);
+}
+
+.friend-search__input {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+}
+
+.btn__friend-search {
+  border: none;
+  font-size: 2rem;
+  background: var(--color-secondary);
+  cursor: pointer;
+}

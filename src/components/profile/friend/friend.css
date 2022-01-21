@@ -1,0 +1,14 @@
+:root {
+  --color-friend-bg: #00ff77;
+}
+
+.profile__friend {
+  background: var(--color-friend-bg);
+}
+
+.profile__actions {
+  transform: scale(1.6);
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  max-width: 15rem;
+}

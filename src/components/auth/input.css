@@ -1,0 +1,44 @@
+:root {
+  --color-input: #3a3a3a;
+  --color-form-error: #ff5724;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form__input__label {
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.form__input {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: var(--color-input);
+  letter-spacing: 0.1rem;
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.4s;
+}
+
+.form__input:focus {
+  border: 0.2rem solid var(--color-secondary);
+}
+
+.form__error {
+  font-size: 1.4rem;
+  color: white;
+  background: var(--color-form-error);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0 1rem;
+  letter-spacing: 0.1rem;
+}

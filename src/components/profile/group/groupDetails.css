@@ -1,0 +1,5 @@
+.group__details {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 40rem;
+}
