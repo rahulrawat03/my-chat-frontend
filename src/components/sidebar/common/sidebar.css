@@ -31,15 +31,7 @@
 }
 
 @media screen and (max-width: 688px) {
-  .sidebar-container {
-    width: fit-content;
-  }
-
   .sidebar--hidden {
     width: 0;
-  }
-
-  .sidebar {
-    min-width: 18rem;
   }
 }
