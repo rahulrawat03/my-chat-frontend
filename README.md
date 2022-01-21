@@ -8,4 +8,4 @@ https://mychatrr.herokuapp.com/
 -> **Role based** permissions are provided to users.      
 -> Completely **Responsive design**.   
 -> **Custom Notifications** for operations like updating profile, deleting group and other.  
--> Connected with backend using **Socket.io** for real time communication._
+-> Connected with backend using **Socket.io** for real time communication.
